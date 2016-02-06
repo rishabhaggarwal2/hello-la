@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @attraction.title %>
+</p>
+
+<p>
+  <strong>Short desc:</strong>
+  <%= @attraction.short_desc %>
+</p>
+
+<p>
+  <strong>Long desc:</strong>
+  <%= @attraction.long_desc %>
+</p>
+
+<%= link_to 'Edit', edit_attraction_path(@attraction) %> |
+<%= link_to 'Back', attractions_path %>
