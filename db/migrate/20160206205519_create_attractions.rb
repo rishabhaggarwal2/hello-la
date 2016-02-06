@@ -4,7 +4,6 @@ class CreateAttractions < ActiveRecord::Migration
       t.string :title
       t.string :short_desc
       t.text :long_desc
-      t.references :taggable, polymorphic:true, index:true
 
       t.timestamps
     end

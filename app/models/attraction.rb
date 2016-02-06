@@ -1,3 +1,3 @@
 class Attraction < ActiveRecord::Base
-  has_many :tags, as: :taggable
+  acts_as_taggable
 end

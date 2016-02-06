@@ -6,30 +6,19 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-Tags.create(
-  [
-    {
-      name:"Eat"
-    },
-    {
-      name:"Shop"
-    },
-    {
-      name:"Explore"
-    },
-    {
-      name:"Party"
-    },
-    {
-      name:"Learn"
-    }
-  ]
-)
+list = ['Eat', 'Shop', 'Explore', 'Party', 'Learn']
+
+list.each do |tag|
+  ActsAsTaggableOn::Tag.new(:name => tag).save
+end
 
 Attraction.create(
   [
     {
-
+      title:"Eggslut",
+      short_desc:Forgery('lorem_ipsum').paragraph,
+      long_desc:Forgery('lorem_ipsum').paragraphs,
+      tag_list:"Eat"
     }
   ]
 )
