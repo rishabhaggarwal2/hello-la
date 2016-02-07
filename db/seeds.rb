@@ -46,7 +46,7 @@ Attraction.create(
       address:"3922 Sunset Blvd, Los Angeles, CA 90029",
       phone_number:"1 323-663-6173",
       subtitle:"The hippest neighborhood's answer to coffee",
-      image_name:"intelligentisa.jpg",
+      image_name:"intelligetisa.jpg",
       link:"www.intelligentsiacoffee.com",
       tag_list:"Eat"
     },
