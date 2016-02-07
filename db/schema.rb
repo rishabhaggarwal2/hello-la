@@ -15,8 +15,7 @@ ActiveRecord::Schema.define(version: 20160207100248) do
 
   create_table "attractions", force: true do |t|
     t.string   "title"
-    t.string   "short_desc"
-    t.text     "long_desc"
+    t.string   "website"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "slug"
