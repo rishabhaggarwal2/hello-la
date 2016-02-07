@@ -139,6 +139,7 @@ ready = function() {
     		}
     		if(e.keyCode == 13){
     			$("section").fadeOut("fast");
+          clearInterval(timer);
     			var linkThis = categories[current].third;
     			linkThis = linkThis.toLowerCase();
     			window.location=('/categories/'+linkThis);

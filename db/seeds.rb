@@ -361,7 +361,7 @@ Attraction.create(
       address:"1351 3rd Street Promenade #201, Santa Monica, CA 90401",
       phone_number:"1 310-393-8355",
       subtitle:"Bring the family on a sunny stroll",
-      image_name:"3rd_street_promenade.jpg",
+      image_name:"3rd_street_promenande.jpg",
       link:"www.downtownsm.com",
       tag_list:"Shop"
     },
