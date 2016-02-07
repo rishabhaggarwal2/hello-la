@@ -1,6 +1,9 @@
 <%= content_tag :section, class:"header-image" do %>
-  <%= content_tag :h1, class:'floating-name', title:@attraction.image_name do %>
-    <%= @attraction.title %>
+  <%= content_tag :h1, class:'floating-name', data:{image:@attraction.image_name} do %>
+    <%= content_tag :span, class:'tag-icon' do %>
+      <%= image_tag tag_icon_helper(@attraction) %>
+    <% end %>
+    <%= @attraction.title %><br />
     <%= content_tag :span, class:'subtitle' do %>
       <%= @attraction.subtitle %>
     <% end %>

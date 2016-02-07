@@ -29,9 +29,7 @@ $mossgreen: #829b6a;
 
 section {
   min-height:100vh;
-  min-width:101vw;
-  left:-1px;
-  top:-1px;
+  min-width:100vw;
   display: flex !important;
   align-items: center;
   justify-content: center;
@@ -44,11 +42,30 @@ section p {
 }
 
 section .floating-name {
+  text-align: center;
+  background-size: cover;
+  background-repeat:no-repeat;
   height:100vh;
   width:100%;
+  padding-top:9%;
   margin:0;
   color:white;
   font-family:"Futura Bold", "Futura", sans-serif;
+  text-transform: uppercase;
+  font-size:5vw;
+  .subtitle {
+    text-transform: none;
+    font-style: italic;
+    position:relative;
+    top:-2vw;
+    font-family:"Futura Book", sans-serif;
+    font-size:2vw;
+  }
+  .tag-icon img {
+    display:block;
+    margin:auto;
+    width:15%;
+  }
 }
 
 .green {

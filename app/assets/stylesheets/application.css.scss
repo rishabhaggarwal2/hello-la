@@ -17,6 +17,16 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
 
+@font-face {
+    font-family:"Futura Bold";
+    src:asset-url("FuturaStd-Bold.otf");
+}
+
+@font-face {
+    font-family:"Futura Book";
+    src:asset-url("FuturaStd-Book.otf");
+}
+
 body {
   font-family:sans-serif;
 }

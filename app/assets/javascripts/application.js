@@ -18,7 +18,7 @@
 
 var ready;
 ready = function() {
-  var background_image_url = $('.floating-name').attr("title");
+  var background_image_url = $('.floating-name').attr("data-image");
   $('.floating-name').css('background-image','url(../assets/' + background_image_url + ')');
 
   var controller = new ScrollMagic.Controller({

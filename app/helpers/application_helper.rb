@@ -18,23 +18,23 @@ module ApplicationHelper
 
       when "Shop"
         if pane == 1
-          '#d01d34'
+          '#f18996'
         else
-          '#3b2f5e'
+          '#2d4454'
         end
 
       when "Explore"
         if pane == 1
-          '#bf5126'
-        else
           '#8ab0cf'
+        else
+          '#bf5126'
         end
 
       when "Party"
         if pane == 1
           '#621e74'
         else
-          '#6ba1c0'
+          '#6ba0bf'
         end
 
       when "Learn"
@@ -52,4 +52,10 @@ module ApplicationHelper
         end
     end
   end
+
+  def tag_icon_helper(attraction)
+    tag = attraction.tag_list.first
+    "#{tag.downcase}_icon_white.svg"
+  end
+
 end
