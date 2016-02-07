@@ -44,32 +44,32 @@ ready = function() {
   //homepage logic
   var categories = {
 		1: {
-			"first":"Eat",
-			"second":"Explore",
-			"third":"Learn",
-			"fourth":"Shop",
-			"fifth":"Party"
+			"first":"Shop",
+			"second":"Party",
+			"third":"Eat",
+			"fourth":"Explore",
+			"fifth":"Learn"
 		},
 		2: {
-			"first":"Explore",
-			"second":"Learn",
-			"third":"Shop",
-			"fourth":"Party",
-			"fifth":"Eat"
-		},
-		3: {
 			"first":"Learn",
 			"second":"Shop",
 			"third":"Party",
 			"fourth":"Eat",
 			"fifth":"Explore"
 		},
+		3: {
+			"first":"Explore",
+			"second":"Learn",
+			"third":"Shop",
+			"fourth":"Party",
+			"fifth":"Eat"
+		},
 		4: {
-			"first":"Shop",
-			"second":"Party",
-			"third":"Eat",
-			"fourth":"Explore",
-			"fifth":"Learn"
+			"first":"Eat",
+			"second":"Explore",
+			"third":"Learn",
+			"fourth":"Shop",
+			"fifth":"Party"
 		},
 		5: {
 			"first":"Party",
@@ -80,22 +80,35 @@ ready = function() {
 		}
 	};
 	var current = 1;
+  var ignore = false;
+  $(".category").hover(function() {
+    if ($(this).hasClass('sexy')) {
+      ignore = true;
+    } else {
+      $(this).addClass('sexy');
+    }
+  }, function() {
+    if (!ignore) {
+      $(this).removeClass('sexy');
+    } else {
+      ignore = false;
+    }
+  });
 	$("b.sexy").attr('data-first',categories[current].first);
 	$("b.sexy").attr('data-fifth',categories[current].fifth);
 	$("span.sexy").attr('data-second',categories[current].second);
 	$("span.sexy").attr('data-fourth',categories[current].fourth);
-	$("span.sexy").html(categories[current].third + "?");
+	$("span.sexy a").text(categories[current].third + "?").attr('href','/categories/'+categories[current].third);
 	var selector = ".category."+categories[current].third;
 	$(selector).addClass("sexy");
 	$(window).keyup(function(e) {
-		console.log(e.keyCode);
-		if(e.keyCode == 38 || e.keyCode == 37){
+		if(e.keyCode == 38 || e.keyCode == 39){
 			if(current == 1)
 				current = 5;
 			else
 				current--;
 		}
-		if(e.keyCode == 40 || e.keyCode == 39){
+		if(e.keyCode == 40 || e.keyCode == 37){
 			if(current == 5)
 				current = 1;
 			else
@@ -112,7 +125,7 @@ ready = function() {
 	  $("b.sexy").attr('data-fifth',categories[current].fifth);
 	  $("span.sexy").attr('data-second',categories[current].second);
 	  $("span.sexy").attr('data-fourth',categories[current].fourth);
-	  $("span.sexy").html(categories[current].third + "?");
+	  $("span.sexy a").text(categories[current].third + "?").attr('href','/categories/'+categories[current].third);
 	  // $("b.sexy").fadeIn(200);
 	  selector = ".category."+categories[current].third;
 	  $(".category").removeClass("sexy");
