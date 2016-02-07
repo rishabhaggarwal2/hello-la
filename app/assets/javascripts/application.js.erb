@@ -18,6 +18,13 @@
 //= require_tree .
 
 var ready;
+var tag_groupings = {
+  "Eat":["#c85e1a","#e8ad00"],
+  "Shop":["#f18996","#2d4454"],
+  "Explore":["#8ab0cf","#bf5126"],
+  "Party":["#621e74","#6ba0bf"],
+  "Learn":["#829b6a","#11506b"]
+};
 ready = function() {
 
   if ($('.swatches').length != 0) {
@@ -117,7 +124,6 @@ ready = function() {
     var timer = setInterval(function() {scroll_move()},2000);
     function scroll_move(e) {
       if (e != undefined) {
-        console.log("off timer");
         clearInterval(timer);
         if(e.keyCode == 40 || e.keyCode == 39){
     			if(current == 1)
@@ -138,7 +144,6 @@ ready = function() {
     			window.location=('/categories/'+linkThis);
     		}
       } else {
-        console.log("on timer");
         if(current == 1)
           current = 5;
         else
@@ -154,6 +159,7 @@ ready = function() {
   	  selector = ".category."+categories[current].third;
   	  $(".category").removeClass("sexy");
   	  $(selector).addClass("sexy");
+      $(".homeSplash").css("background-color",tag_groupings[categories[current].third][0]);
     }
   	$(window).keyup(function(e) {scroll_move(e)});
   }

@@ -19,7 +19,7 @@ Attraction.create(
       address:"1614 Santa Monica Blvd, Santa Monica, CA 90404",
       phone_number:"1 310-829-2512",
       subtitle:"Because you know you have a sweet tooth",
-      image_name:"",
+      image_name:"dks_donuts.jpg",
       link:"http://www.dksdonuts.com/menu/",
       tag_list:"Eat"
     },
@@ -46,8 +46,8 @@ Attraction.create(
       address:"3922 Sunset Blvd, Los Angeles, CA 90029",
       phone_number:"1 323-663-6173",
       subtitle:"The hippest neighborhood's answer to coffee",
-      image_name:"www.intelligentsiacoffee.com",
-      link:"",
+      image_name:"intelligentisa.jpg",
+      link:"www.intelligentsiacoffee.com",
       tag_list:"Eat"
     },
     {
@@ -64,8 +64,8 @@ Attraction.create(
       address:"1387 Westwood Blvd, Los Angeles, CA 90024",
       phone_number:"1 310-477-5533",
       subtitle:"For the adventurous ice cream aficionado",
-      image_name:"http://www.golobolbol.org/menu.html",
-      link:"",
+      image_name:"saffron_and_rose.jpg",
+      link:"http://www.golobolbol.org/menu.html",
       tag_list:"Eat"
     },
     {
@@ -73,8 +73,8 @@ Attraction.create(
       address:"55 N La Cienega Blvd, Beverly Hills, CA 90211",
       phone_number:"1 310-652-7673",
       subtitle:"Prepare to smell like garlic for the next week",
-      image_name:"http://www.thestinkingrose.com/bh/menu1.html",
-      link:"",
+      image_name:"the_stinking_rose.jpg",
+      link:"http://www.thestinkingrose.com/bh/menu1.html",
       tag_list:"Eat"
     },
     {
@@ -91,7 +91,7 @@ Attraction.create(
       address:"Abbot Kinney Blvd, Venice, CA 90291",
       phone_number:"N/A",
       subtitle:"GQ's so-called 'coolest block in America'",
-      image_name:"",
+      image_name:"abbot_kinney_blvd.jpg",
       link:"http://abbotkinneyblvd.com/",
       tag_list:"Explore"
     },
@@ -100,7 +100,7 @@ Attraction.create(
       address:"304 S Broadway, Los Angeles, CA 90013",
       phone_number:"213-626-1893",
       subtitle:"As featured in 'Blade Runner' and '500 Days of Summer'",
-      image_name:"",
+      image_name:"bradbury_building.jpg",
       link:"www.laconservancy.org",
       tag_list:"Explore"
     },
@@ -109,7 +109,7 @@ Attraction.create(
       address:"8221 Sunset Blvd, Los Angeles, CA 90046",
       phone_number:"1 323-656-1010",
       subtitle:"An idyllic hotel on the busy Sunset Strip",
-      image_name:"",
+      image_name:"chateau_marmont.jpg",
       link:"www.chateaumarmont.com",
       tag_list:"Explore"
     },
@@ -118,7 +118,7 @@ Attraction.create(
       address:"Olvera St, Los Angeles, CA 90012",
       phone_number:"N/A",
       subtitle:"Celebrate Hispanic culture in a downtown oasis",
-      image_name:"",
+      image_name:"olvera_st.jpg",
       link:"http://www.olvera-street.com/",
       tag_list:"Explore"
     },
@@ -190,7 +190,7 @@ Attraction.create(
       address:"250 S Grand Ave, Los Angeles, CA 90012",
       phone_number:"1 213-621-2766",
       subtitle:"You can always be more cultured",
-      image_name:"",
+      image_name:"moca.jpg",
       link:"www.moca.org",
       tag_list:"Learn"
     },
@@ -199,7 +199,7 @@ Attraction.create(
       address:"900 Exposition Blvd, Los Angeles, CA 90007",
       phone_number:"1 213-763-3466",
       subtitle:"If you're feeling inspired by Jurassic Park",
-      image_name:"",
+      image_name:"natural_history_museum.jpg",
       link:"www.nhm.org",
       tag_list:"Learn"
     },
@@ -217,7 +217,7 @@ Attraction.create(
       address:"Los Angeles, CA 90095",
       phone_number:"1 310-825-4321",
       subtitle:"Stay for an afternoon... or four years",
-      image_name:"",
+      image_name:"ucla.jpg",
       link:"www.ucla.edu",
       tag_list:"Learn"
     },
@@ -226,7 +226,7 @@ Attraction.create(
       address:"Los Angeles, CA",
       phone_number:"1 213-740-2311",
       subtitle:"One of LA's many universities",
-      image_name:"",
+      image_name:"usc.jpg",
       link:"usc.edu",
       tag_list:"Learn"
     },
@@ -235,7 +235,7 @@ Attraction.create(
       address:"333 S Alameda St, Los Angeles, CA 90013",
       phone_number:"1 213-620-1030",
       subtitle:"If you want to bring out your inner Adele",
-      image_name:"",
+      image_name:"max_karaoke.jpg",
       link:"www.maxkaraokestudio.com",
       tag_list:"Party"
     },
@@ -262,7 +262,7 @@ Attraction.create(
       address:"108 W 2nd St #101, Los Angeles, CA 90012",
       phone_number:"1 213-613-0000",
       subtitle:"The interior design is reason enough to swing by",
-      image_name:"",
+      image_name:"the_edison.jpg",
       link:"www.edisondowntown.com",
       tag_list:"Party"
     },
@@ -271,7 +271,7 @@ Attraction.create(
       address:"2700 N Vermont Ave, Los Angeles, CA 90027",
       phone_number:"1 323-665-5857",
       subtitle:"The interior design is reason enough to swing by",
-      image_name:"",
+      image_name:"the_greek_theatre.jpg",
       link:"www.greektheatrela.com",
       tag_list:"Party"
     },
@@ -280,7 +280,7 @@ Attraction.create(
       address:"225 Santa Monica Blvd, Santa Monica, CA 90401",
       phone_number:"1 310-656-9800",
       subtitle:"Your safe bet, a well-loved establishment",
-      image_name:"",
+      image_name:"the_misfit.jpg",
       link:"www.themisfitbar.com",
       tag_list:"Party"
     },
@@ -298,7 +298,7 @@ Attraction.create(
       address:"5919 Franklin Ave, Los Angeles, CA 90028",
       phone_number:"1 323-908-8702",
       subtitle:"Intimately experience the future stars of comedy",
-      image_name:"",
+      image_name:"ucb.jpg",
       link:"losangeles.ucbtheatre.com",
       tag_list:"Party"
     },
@@ -307,7 +307,7 @@ Attraction.create(
       address:"6400 Sunset Blvd, Los Angeles, CA 90028",
       phone_number:"1 323-245-6400",
       subtitle:"An institution for the record collector",
-      image_name:"",
+      image_name:"amoeba.jpg",
       link:"www.amoeba.com",
       tag_list:"Shop"
     },
@@ -343,7 +343,7 @@ Attraction.create(
       address:"189 The Grove Dr, Los Angeles, CA 90036",
       phone_number:"1 323-900-8080",
       subtitle:"An outdoor mall with added glamour",
-      image_name:"",
+      image_name:"the_grove.jpg",
       link:"www.thegrovela.com",
       tag_list:"Shop"
     },
@@ -370,7 +370,7 @@ Attraction.create(
       address:"7428 Melrose Ave, Los Angeles, CA 90046",
       phone_number:"1 323-653-3028",
       subtitle:"It's worth sifting through this high-end thrift store",
-      image_name:"",
+      image_name:"wasteland.jpg",
       link:"www.shopwasteland.com",
       tag_list:"Shop"
     }

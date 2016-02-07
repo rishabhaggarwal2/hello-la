@@ -9,8 +9,25 @@
 .homeSplash{
 	text-align: center;
 	min-height: 80%;
-	background: #f7f7f7;
+	background: url('MapW2.svg');
+	background-color:  rgba(255,0,0,0.5);
+	background-position: -200px -200px;
+	background-size:200% auto;
+	background-repeat: no-repeat;
+	min-height: 100vh;
+	transition: 1s ease all;
+	-webkit-transition: 1s ease all;
+	-moz-transition: 1s ease all;
+	-ms-transition: 1s ease all;
+	-o-transition: 1s ease all;
 	padding: 40px 40px;
+}
+.homeSplash .homeContainer{
+	width: 80%;
+	max-width: 700px;
+	margin: auto;
+	background: rgba(255,255,255,0.95);
+	padding: 40px 0;
 }
 .homeSplash h1{
 	text-transform: uppercase;
