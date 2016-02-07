@@ -1,5 +1,5 @@
 <%= content_tag :section, class:"header-image" do %>
-  <%= content_tag :h1, class:'floating-name', data:{image:@attraction.image_name} do %>
+  <%= content_tag :h1, class:'floating-name', data:{image:asset_path(@attraction.image_name)} do %>
     <%= content_tag :span, class:'tag-icon' do %>
       <%= link_to category_helper(@attraction) do %>
         <%= image_tag tag_icon_helper(@attraction) %>

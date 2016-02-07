@@ -32,7 +32,7 @@ ready = function() {
   if ($('.floating-name').length != 0) {
     //attraction show logic
     var background_image_url = $('.floating-name').attr("data-image");
-    $('.floating-name').css('background-image','url(../assets/' + background_image_url + ')');
+    $('.floating-name').css('background-image','url(' + background_image_url + ')');
 
     var controller = new ScrollMagic.Controller({
   		globalSceneOptions: {
