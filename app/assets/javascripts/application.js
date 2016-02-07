@@ -17,7 +17,10 @@
 
 var ready;
 ready = function() {
-  $("#category").change(function() {
-    
+  $("#category").change(function(e) {
+    window.location.pathname = "/category/" + $(this).val().toLowerCase();
   })
 }
+
+$(document).ready(ready);
+$(document).on("page:load",ready);

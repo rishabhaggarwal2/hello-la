@@ -19,6 +19,30 @@ Attraction.create(
       short_desc:Forgery('lorem_ipsum').paragraph,
       long_desc:Forgery('lorem_ipsum').paragraphs,
       tag_list:"Eat"
+    },
+    {
+      title:"The Last Bookstore",
+      short_desc:Forgery('lorem_ipsum').paragraph,
+      long_desc:Forgery('lorem_ipsum').paragraphs,
+      tag_list:"Shop"
+    },
+    {
+      title:"Santa Monica Pier",
+      short_desc:Forgery('lorem_ipsum').paragraph,
+      long_desc:Forgery('lorem_ipsum').paragraphs,
+      tag_list:"Explore"
+    },
+    {
+      title:"UCB Theater",
+      short_desc:Forgery('lorem_ipsum').paragraph,
+      long_desc:Forgery('lorem_ipsum').paragraphs,
+      tag_list:"Party"
+    },
+    {
+      title:"Griffith Observatory",
+      short_desc:Forgery('lorem_ipsum').paragraph,
+      long_desc:Forgery('lorem_ipsum').paragraphs,
+      tag_list:"Learn"
     }
   ]
 )

@@ -7,6 +7,10 @@ class AttractionsController < ApplicationController
     @attractions = Attraction.all
   end
 
+  def category
+    @attractions = Attraction.tagged_with(params[:tag])
+  end
+
   # GET /attractions/1
   # GET /attractions/1.json
   def show

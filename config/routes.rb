@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   resources :attractions
 
+  get 'category/:tag' => 'attractions#category'
+
   root 'attractions#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
