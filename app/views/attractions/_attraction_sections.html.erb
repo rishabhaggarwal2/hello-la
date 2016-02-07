@@ -3,7 +3,7 @@
   <% if value.kind_of?(Array) %>
     <%= content_tag :section, class:"row", style:"background-color:#{tag_color(index,@attraction)}; color:white;" do %>
       <% value.each do |subval| %>
-        <%= content_tag :div, class:"col-md-4" do %>
+        <%= content_tag :div, class:"col-md-4 attraction-info" do %>
           <h3><%= humanize(subval) %></h3>
           <p><%= attraction[subval] %></p>
         <% end %>

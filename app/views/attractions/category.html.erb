@@ -1,5 +1,5 @@
 <div class="categoryPage">
-	<%= content_tag :div, class:"title", style:"background-color:#{tag_color(1,@attractions.first)}" do %>
+	<%= content_tag :div, class:"title", style:"background-color:#{tag_color(0,@attractions.first)}" do %>
 		<%= image_tag tag_icon_helper(@attractions.first) %>
 		<%= content_tag :h1, get_tag(@attractions.first) %>
 	<% end %>
@@ -16,7 +16,7 @@
 		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 	<% end %>
-	<%= content_tag :section, class:"logo-slide", style:"background-color:#{tag_color(1,@attractions.first)}; color:white;" do %>
+	<%= content_tag :section, class:"logo-slide", style:"background-color:#{tag_color(0,@attractions.first)}; color:white;" do %>
 	  <%= link_to :root do %>
 	    <%= image_tag "logo_white.svg" %>
 	  <% end %>

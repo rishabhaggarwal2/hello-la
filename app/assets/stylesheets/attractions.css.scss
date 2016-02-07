@@ -224,7 +224,8 @@ h4 b:after{
 .paragraph{
 	padding: 60px 0px 40px 0;
 }
-.paragraph p{
+.paragraph p {
+	font-family:"Futura Book", "Futura", sans-serif;
 	max-width: 800px;
 	text-align: left;
 	color: #fff;
@@ -272,6 +273,10 @@ section p {
 
 section.logo-slide {
   min-height:50vh;
+}
+
+.attraction-info p {
+	font-family:"Futura Book", "Futura", sans-serif;
 }
 
 section .floating-name {
