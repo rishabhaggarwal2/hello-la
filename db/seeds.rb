@@ -15,10 +15,15 @@ end
 Attraction.create(
   [
     {
-      title:"Eggslut",
+      title:"Urth Cafe",
+      subtitle:"Although organic tea is their standard, the chicken curry sandwich is a must-try.",
       short_desc:Forgery('lorem_ipsum').paragraph,
       long_desc:Forgery('lorem_ipsum').paragraphs,
-      tag_list:"Eat"
+      tag_list:"Eat",
+      address:"451 South Hewitt St, Los Angeles, CA 90013",
+      phone_number:"(213) 797-4527",
+      image_name:"urth.jpg",
+      tips:"Please eat here\nReally please its nice"
     },
     {
       title:"The Last Bookstore",
@@ -42,7 +47,8 @@ Attraction.create(
       title:"Griffith Observatory",
       short_desc:Forgery('lorem_ipsum').paragraph,
       long_desc:Forgery('lorem_ipsum').paragraphs,
-      tag_list:"Learn"
+      tag_list:"Learn",
+      image_name:"griffith.jpg"
     }
   ]
 )

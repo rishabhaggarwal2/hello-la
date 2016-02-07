@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160206224739) do
+ActiveRecord::Schema.define(version: 20160207043807) do
 
   create_table "attractions", force: true do |t|
     t.string   "title"
@@ -19,6 +19,13 @@ ActiveRecord::Schema.define(version: 20160206224739) do
     t.text     "long_desc"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "slug"
+    t.string   "image_name"
+    t.string   "subtitle"
+    t.string   "tips"
+    t.string   "address"
+    t.string   "phone_number"
+    t.string   "hours"
   end
 
   create_table "taggings", force: true do |t|
