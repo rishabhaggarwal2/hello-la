@@ -2,30 +2,165 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-$mossgreen: #829b6a;
+/*
+  Homepage logic
+*/
 
-.centered {
-  margin:auto;
-  text-align: center;
+.homeSplash{
+	text-align: center;
+	min-height: 80%;
+	background: #f7f7f7;
+	padding: 40px 40px;
+}
+.homeSplash h1{
+	text-transform: uppercase;
+	display: block;
+	font-size: 20px;
+	letter-spacing: 5px;
+	margin:0;
+	margin-top: 10px;
+	line-height: 1.5;
+}
+.homeSplash h4{
+	font-weight: normal;
+	display: block;
+	line-height: 1;
+	margin:0;
+	margin-top: 90px;
+}
+.svgLogo{
+	width: 600px;
+	margin: auto;
+	border-top:1px solid #000;
+	border-bottom:1px solid #000;
+}
+.logo img{
+	width: 160px;
+}
+.categoryIcons{
+	margin-top: 150px;
+}
+.category{
+	display: inline-block;
+	margin: 0 40px;
+}
+.category svg{
+	width:60px;
+	fill:#000 !important;
+	margin-bottom: 0;
+}
+.category svg path{
+	fill:#000;
 }
 
-.logo {
-    margin:20% 0%;
+.category h6{
+	margin:0;
+	opacity: 0;
+	text-transform: uppercase;
+}
+.homeSplash h4{
+	position: relative;
+	width: 240px;
+	display: block;
+	text-align: left;
+	margin: auto;
+	margin-top: 150px;
+}
+// h4:before{
+// 	content:'v';
+// 	transform:rotate(180deg);
+// 	position: absolute;
+// 	top:-85px;
+// 	left:153px;
+// }
+// h4:after{
+// 	content:'v';
+// 	position: absolute;
+// 	top:85px;
+// 	left:153px;
+// }
+h4 b{
+	position: relative;
+	margin-left: 10px;
+}
+h4 span{
+	position: relative;
+}
+h4 b:before{
+	content:attr(data-first);
+	position: absolute;
+	top:-60px;
+	color: #ccc;
+}
+h4 span:before{
+	position: absolute;
+	top:-30px;
+	color: #777;
+	content:attr(data-second);
+}
+h4 span:after{
+	content:'Learn';
+	position: absolute;
+	top:30px;
+	left: 0;
+	color: #777;
+	content:attr(data-fourth);
+}
+h4 b:after{
+	content:'Explore';
+	position: absolute;
+	top:60px;
+	left: 0;
+	color: #ccc;
+	content:attr(data-fifth);
+}
+.category svg path{
+	transition:0.4s ease all !important;
+	-webkit-transition:0.4s ease all !important;
+}
+.category h6{
+	transition:0.4s ease all !important;
+	-webkit-transition:0.4s ease all !important;
 }
 
-.logo-text {
-    font-size:10vw;
-    font-family:"Futura", sans-serif;
-    color:black;
+.Eat.sexy svg path{
+	fill:#c85e1a;
+}
+.Eat.sexy h6{
+	color:#c85e1a;
 }
 
-.box {
-  margin: 20% 0%;
+.Explore.sexy svg path{
+	fill:#8ab0cf;
+}
+.Explore.sexy h6{
+	color:#8ab0cf;
 }
 
-.main-text {
-  font-size:4vw;
+.Learn.sexy svg path{
+	fill:#829b6a;
 }
+.Learn.sexy h6{
+	color:#829b6a;
+}
+
+.Party.sexy svg path{
+	fill:#621e74;
+}
+.Party.sexy h6{
+	color:#621e74;
+}
+
+.Shop.sexy svg path{
+	fill:#f18996;
+}
+.Shop.sexy h6{
+	color:#f18996;
+}
+
+/*
+  Attraction show logic
+*/
 
 section {
   min-height:100vh;
@@ -70,9 +205,4 @@ section .floating-name {
     margin:auto;
     width:15%;
   }
-}
-
-.green {
-  background-color:$mossgreen;
-  color:white;
 }

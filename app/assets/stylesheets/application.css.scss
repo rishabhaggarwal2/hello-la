@@ -17,15 +17,46 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
 
-@font-face {
-    font-family:"Futura Bold";
-    src:asset-url("FuturaStd-Bold.otf");
-}
 
-@font-face {
-    font-family:"Futura Book";
-    src:asset-url("FuturaStd-Book.otf");
-}
+ @font-face {
+ 	font-family: 'Futura Std';
+ 	src: url('FuturaStd-Bold.eot');
+ 	src: url('FuturaStd-Bold.eot?#iefix') format('embedded-opentype'),
+ 		url('FuturaStd-Bold.woff') format('woff'),
+ 		url('FuturaStd-Bold.ttf') format('truetype');
+ 	font-weight: bold;
+ 	font-style: normal;
+ }
+
+ @font-face {
+ 	font-family: 'Futura Std';
+ 	src: url('FuturaStd-ExtraBold.eot');
+ 	src: url('FuturaStd-ExtraBold.eot?#iefix') format('embedded-opentype'),
+ 		url('FuturaStd-ExtraBold.woff') format('woff'),
+ 		url('FuturaStd-ExtraBold.ttf') format('truetype');
+ 	font-weight: 800;
+ 	font-style: normal;
+ }
+
+ @font-face {
+ 	font-family: 'Futura Std';
+ 	src: url('FuturaStd-BookOblique.eot');
+ 	src: url('FuturaStd-BookOblique.eot?#iefix') format('embedded-opentype'),
+ 		url('FuturaStd-BookOblique.woff') format('woff'),
+ 		url('FuturaStd-BookOblique.ttf') format('truetype');
+ 	font-weight: normal;
+ 	font-style: italic;
+ }
+
+ @font-face {
+ 	font-family: 'Futura Std';
+ 	src: url('FuturaStd-Book.eot');
+ 	src: url('FuturaStd-Book.eot?#iefix') format('embedded-opentype'),
+ 		url('FuturaStd-Book.woff') format('woff'),
+ 		url('FuturaStd-Book.ttf') format('truetype');
+ 	font-weight: normal;
+ 	font-style: normal;
+ }
 
 body {
   font-family:sans-serif;

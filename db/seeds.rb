@@ -15,7 +15,7 @@ end
 Attraction.create(
   [
     {
-      title:"Urth Cafe",
+      title:"Urth Caffe",
       subtitle:"Although organic tea is their standard, the chicken curry sandwich is a must-try.",
       short_desc:Forgery('lorem_ipsum').paragraph,
       long_desc:Forgery('lorem_ipsum').paragraphs,
