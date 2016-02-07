@@ -11,6 +11,8 @@
  * file per style scope.
  *
  *= require_tree .
+ *= include slick.scss
+ *= include slick-theme.scss
  *= require_self
  */
 

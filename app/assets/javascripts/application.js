@@ -12,12 +12,22 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= include slick.min.js
 //= require bootstrap-sprockets
 //= require turbolinks
 //= require_tree .
 
 var ready;
 ready = function() {
+
+  if ($('.swatches').length != 0) {
+    // $('.swatches').slick({
+    //   infinite:true,
+    //   slidesToShow:4,
+    //   slidesToScroll:1,
+    //   dots:false
+    // });
+  }
 
   if ($('.floating-name').length != 0) {
     //attraction show logic
