@@ -24,6 +24,8 @@ gem 'acts-as-taggable-on', '~> 3.4'
 
 gem 'forgery', '0.6.0'
 
+gem 'bootstrap-sass'
+
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 gem 'spring',        group: :development
 
