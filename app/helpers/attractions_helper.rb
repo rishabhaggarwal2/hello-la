@@ -7,6 +7,8 @@ module AttractionsHelper
       "Phone Number"
     when "hours"
       "Hours"
+    when "link"
+      "Website"
     else
       "What"
     end

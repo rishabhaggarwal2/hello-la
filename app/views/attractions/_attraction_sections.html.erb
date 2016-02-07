@@ -1,4 +1,4 @@
-<% panel_items = [["address","phone_number","hours"]] %>
+<% panel_items = [["address","phone_number","link"]] %>
 <% panel_items.each_with_index do |value, index| %>
   <% if value.kind_of?(Array) %>
     <%= content_tag :section, class:"row", style:"background-color:#{tag_color(index,@attraction)}; color:white;" do %>
