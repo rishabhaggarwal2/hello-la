@@ -119,13 +119,13 @@ ready = function() {
       if (e != undefined) {
         console.log("off timer");
         clearInterval(timer);
-        if(e.keyCode == 38 || e.keyCode == 39){
+        if(e.keyCode == 40 || e.keyCode == 39){
     			if(current == 1)
     				current = 5;
     			else
     				current--;
     		}
-    		if(e.keyCode == 40 || e.keyCode == 37){
+    		if(e.keyCode == 38 || e.keyCode == 37){
     			if(current == 5)
     				current = 1;
     			else

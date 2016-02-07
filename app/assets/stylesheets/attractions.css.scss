@@ -201,11 +201,14 @@ h4 b:after{
 	text-decoration:none;
 }
 .swatches .overlay {
+	text-align: center;
 	.swatch-subtitle {
 		font-family:"Futura Book", sans-serif;
+		text-transform: lowercase;
 	}
 	.swatch-title {
 		font-family:"Futura Bold", "Futura", sans-serif;
+		text-transform: uppercase;
 		font-weight:bold;
 	}
 }
