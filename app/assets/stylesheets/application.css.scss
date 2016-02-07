@@ -22,40 +22,40 @@
 
  @font-face {
  	font-family: 'Futura Bold';
- 	src: url('FuturaStd-Bold.eot');
- 	src: url('FuturaStd-Bold.eot?#iefix') format('embedded-opentype'),
- 		url('FuturaStd-Bold.woff') format('woff'),
- 		url('FuturaStd-Bold.ttf') format('truetype');
+ 	src: asset-url('FuturaStd-Bold.eot');
+ 	src: asset-url('FuturaStd-Bold.eot?#iefix') format('embedded-opentype'),
+ 		asset-url('FuturaStd-Bold.woff') format('woff'),
+ 		asset-url('FuturaStd-Bold.ttf') format('truetype');
  	font-weight: bold;
  	font-style: normal;
  }
 
  @font-face {
  	font-family: 'Futura Extra Bold';
- 	src: url('FuturaStd-ExtraBold.eot');
- 	src: url('FuturaStd-ExtraBold.eot?#iefix') format('embedded-opentype'),
- 		url('FuturaStd-ExtraBold.woff') format('woff'),
- 		url('FuturaStd-ExtraBold.ttf') format('truetype');
+ 	src: asset-url('FuturaStd-ExtraBold.eot');
+ 	src: asset-url('FuturaStd-ExtraBold.eot?#iefix') format('embedded-opentype'),
+ 		asset-url('FuturaStd-ExtraBold.woff') format('woff'),
+ 		asset-url('FuturaStd-ExtraBold.ttf') format('truetype');
  	font-weight: 800;
  	font-style: normal;
  }
 
  @font-face {
  	font-family: 'Futura Book Oblique';
- 	src: url('FuturaStd-BookOblique.eot');
- 	src: url('FuturaStd-BookOblique.eot?#iefix') format('embedded-opentype'),
- 		url('FuturaStd-BookOblique.woff') format('woff'),
- 		url('FuturaStd-BookOblique.ttf') format('truetype');
+ 	src: asset-('FuturaStd-BookOblique.eot');
+ 	src: asset-url('FuturaStd-BookOblique.eot?#iefix') format('embedded-opentype'),
+ 		asset-url('FuturaStd-BookOblique.woff') format('woff'),
+ 		asset-url('FuturaStd-BookOblique.ttf') format('truetype');
  	font-weight: normal;
  	font-style: italic;
  }
 
  @font-face {
  	font-family: 'Futura Book';
- 	src: url('FuturaStd-Book.eot');
- 	src: url('FuturaStd-Book.eot?#iefix') format('embedded-opentype'),
- 		url('FuturaStd-Book.woff') format('woff'),
- 		url('FuturaStd-Book.ttf') format('truetype');
+ 	src: asset-url('FuturaStd-Book.eot');
+ 	src: asset-url('FuturaStd-Book.eot?#iefix') format('embedded-opentype'),
+ 		asset-url('FuturaStd-Book.woff') format('woff'),
+ 		asset-url('FuturaStd-Book.ttf') format('truetype');
  	font-weight: normal;
  	font-style: normal;
  }
