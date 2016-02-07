@@ -325,7 +325,7 @@ Attraction.create(
       address:"7850 Melrose Ave, Los Angeles, CA 90046",
       phone_number:"1 323-655-7679",
       subtitle:"With such a unique bazaar, you're guaranteed to find something special",
-      image_name:"",
+      image_name:"melrose_trading.jpg",
       link:"www.melrosetradingpost.org",
       tag_list:"Shop"
     },
