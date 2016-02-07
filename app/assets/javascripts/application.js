@@ -101,25 +101,36 @@ ready = function() {
 	$("span.sexy a").text(categories[current].third + "?").attr('href','/categories/'+categories[current].third);
 	var selector = ".category."+categories[current].third;
 	$(selector).addClass("sexy");
-	$(window).keyup(function(e) {
-		if(e.keyCode == 38 || e.keyCode == 39){
-			if(current == 1)
-				current = 5;
-			else
-				current--;
-		}
-		if(e.keyCode == 40 || e.keyCode == 37){
-			if(current == 5)
-				current = 1;
-			else
-				current++;
-		}
-		if(e.keyCode == 13){
-			$("section").fadeOut("fast");
-			var linkThis = categories[current].third;
-			linkThis = linkThis.toLowerCase();
-			window.location=('/categories/'+linkThis);
-		}
+  var timer = setInterval(function() {scroll_move()},2000);
+  function scroll_move(e) {
+    if (e != undefined) {
+      console.log("off timer");
+      clearInterval(timer);
+      if(e.keyCode == 38 || e.keyCode == 39){
+  			if(current == 1)
+  				current = 5;
+  			else
+  				current--;
+  		}
+  		if(e.keyCode == 40 || e.keyCode == 37){
+  			if(current == 5)
+  				current = 1;
+  			else
+  				current++;
+  		}
+  		if(e.keyCode == 13){
+  			$("section").fadeOut("fast");
+  			var linkThis = categories[current].third;
+  			linkThis = linkThis.toLowerCase();
+  			window.location=('/categories/'+linkThis);
+  		}
+    } else {
+      console.log("on timer");
+      if(current == 1)
+        current = 5;
+      else
+        current--;
+    }
 		// $("b.sexy").fadeOut(200);
 	  $("b.sexy").attr('data-first',categories[current].first);
 	  $("b.sexy").attr('data-fifth',categories[current].fifth);
@@ -130,7 +141,8 @@ ready = function() {
 	  selector = ".category."+categories[current].third;
 	  $(".category").removeClass("sexy");
 	  $(selector).addClass("sexy");
-	});
+  }
+	$(window).keyup(function(e) {scroll_move(e)});
 }
 
 $(document).ready(ready);
