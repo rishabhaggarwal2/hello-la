@@ -2,7 +2,7 @@ class CreateAttractions < ActiveRecord::Migration
   def change
     create_table :attractions do |t|
       t.string :title
-      t.string :website
+      t.string :link
 
       t.timestamps
     end
