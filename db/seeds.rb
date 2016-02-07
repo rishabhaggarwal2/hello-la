@@ -23,7 +23,7 @@ Attraction.create(
       address:"451 South Hewitt St",
       phone_number:"(213) 797-4527",
       image_name:"urth.jpg",
-      tips:"Please eat here\nReally please its nice"
+      recommended: true
     },
     {
       title:"DK's Donuts",
@@ -32,7 +32,8 @@ Attraction.create(
       long_desc:Forgery('lorem_ipsum').paragraphs,
       tag_list:"Eat",
       address:"Somewhere in the Milky Way",
-      phone_number:Forgery('address').phone
+      phone_number:Forgery('address').phone,
+      recommended:false
     },
     {
       title:"The Last Bookstore",
@@ -41,10 +42,10 @@ Attraction.create(
       long_desc:Forgery('lorem_ipsum').paragraphs,
       tag_list:"Shop",
       subtitle:Forgery('lorem_ipsum').sentence,
-      tips:Forgery('lorem_ipsum').sentences,
       address:Forgery('address').street_address,
       phone_number:Forgery('address').phone,
-      hours:"9-10 Mon-Fri"
+      hours:"9-10 Mon-Fri",
+      recommended:false
     },
     {
       title:"Santa Monica Pier",
@@ -53,10 +54,10 @@ Attraction.create(
       long_desc:Forgery('lorem_ipsum').paragraphs,
       tag_list:"Explore",
       subtitle:Forgery('lorem_ipsum').sentence,
-      tips:Forgery('lorem_ipsum').sentences,
       address:Forgery('address').street_address,
       phone_number:Forgery('address').phone,
-      hours:"9-10 Mon-Fri"
+      hours:"9-10 Mon-Fri",
+      recommended: true
     },
     {
       title:"UCB Theater",
@@ -65,10 +66,10 @@ Attraction.create(
       long_desc:Forgery('lorem_ipsum').paragraphs,
       tag_list:"Party",
       subtitle:Forgery('lorem_ipsum').sentence,
-      tips:Forgery('lorem_ipsum').sentences,
       address:Forgery('address').street_address,
       phone_number:Forgery('address').phone,
-      hours:"9-10 Mon-Fri"
+      hours:"9-10 Mon-Fri",
+      recommended:false
     },
     {
       title:"Griffith Observatory",
@@ -77,7 +78,6 @@ Attraction.create(
       tag_list:"Learn",
       image_name:"griffith.jpg",
       subtitle:Forgery('lorem_ipsum').sentence,
-      tips:Forgery('lorem_ipsum').sentences,
       address:Forgery('address').street_address,
       phone_number:Forgery('address').phone,
       hours:"9-10 Mon-Fri"
@@ -89,10 +89,10 @@ Attraction.create(
       short_desc:Forgery('lorem_ipsum').paragraph,
       long_desc:Forgery('lorem_ipsum').paragraphs,
       subtitle:Forgery('lorem_ipsum').sentence,
-      tips:Forgery('lorem_ipsum').sentences,
       address:Forgery('address').street_address,
       phone_number:Forgery('address').phone,
-      hours:"9-10 Mon-Fri"
+      hours:"9-10 Mon-Fri",
+      recommended:false
     },
     {
       title:"First Fridays",
@@ -101,10 +101,10 @@ Attraction.create(
       short_desc:Forgery('lorem_ipsum').paragraph,
       long_desc:Forgery('lorem_ipsum').paragraphs,
       subtitle:Forgery('lorem_ipsum').sentence,
-      tips:Forgery('lorem_ipsum').sentences,
       address:Forgery('address').street_address,
       phone_number:Forgery('address').phone,
-      hours:"9-10 Mon-Fri"
+      hours:"9-10 Mon-Fri",
+      recommended: true
     },
     {
       title:"Intelligensia",
@@ -112,10 +112,10 @@ Attraction.create(
       short_desc:Forgery('lorem_ipsum').paragraph,
       long_desc:Forgery('lorem_ipsum').paragraphs,
       subtitle:Forgery('lorem_ipsum').sentence,
-      tips:Forgery('lorem_ipsum').sentences,
       address:Forgery('address').street_address,
       phone_number:Forgery('address').phone,
-      hours:"9-10 Mon-Fri"
+      hours:"9-10 Mon-Fri",
+      recommended:false
     },
     {
       title:"Kang Ho Dong Baekjeong",
@@ -123,10 +123,10 @@ Attraction.create(
       short_desc:Forgery('lorem_ipsum').paragraph,
       long_desc:Forgery('lorem_ipsum').paragraphs,
       subtitle:Forgery('lorem_ipsum').sentence,
-      tips:Forgery('lorem_ipsum').sentences,
       address:Forgery('address').street_address,
       phone_number:Forgery('address').phone,
-      hours:"9-10 Mon-Fri"
+      hours:"9-10 Mon-Fri",
+      recommended:false
     },
     {
       title:"Saffron & Rose Ice Cream",
@@ -134,10 +134,10 @@ Attraction.create(
       short_desc:Forgery('lorem_ipsum').paragraph,
       long_desc:Forgery('lorem_ipsum').paragraphs,
       subtitle:Forgery('lorem_ipsum').sentence,
-      tips:Forgery('lorem_ipsum').sentences,
       address:Forgery('address').street_address,
       phone_number:Forgery('address').phone,
-      hours:"9-10 Mon-Fri"
+      hours:"9-10 Mon-Fri",
+      recommended: true
     },
     {
       title:"The Stinking Rose",
@@ -145,10 +145,10 @@ Attraction.create(
       short_desc:Forgery('lorem_ipsum').paragraph,
       long_desc:Forgery('lorem_ipsum').paragraphs,
       subtitle:Forgery('lorem_ipsum').sentence,
-      tips:Forgery('lorem_ipsum').sentences,
       address:Forgery('address').street_address,
       phone_number:Forgery('address').phone,
-      hours:"9-10 Mon-Fri"
+      hours:"9-10 Mon-Fri",
+      recommended:false
     }
   ]
 )

@@ -159,6 +159,94 @@ h4 b:after{
 }
 
 /*
+	Attraction category logic
+*/
+.categoryPage h1{
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 42px;
+	line-height: 1;
+	padding: 0;
+	margin: 0;
+}
+.title {
+	text-align: center;
+	padding: 80px;
+}
+.title img {
+	width: 80px;
+	margin-bottom: 0
+}
+.swatches {
+	display: flex;
+	justify-content:center;
+}
+.swatches div{
+	width:25%;
+	height:200px;
+	color: #fff;
+	box-sizing:border-box;
+}
+.swatches img{
+	height:30px;
+	position: relative;
+	top:-1px;
+	vertical-align: middle;
+}
+.swatches div .overlay {
+	width: 100%;
+	height: 100%;
+	padding:10px;
+	background: rgba(0,0,0,0.5);
+	transition:0.3s ease all;
+	-webkit-transition:0.3s ease all;
+	-moz-transition:0.3s ease all;
+	-ms-transition:0.3s ease all;
+	cursor: pointer;
+}
+.swatches div .overlay:hover {
+	background: rgba(0,0,0,0);
+	text-decoration:none;
+}
+.swatches p {
+	font-family: Georgia;
+	font-style: italic;
+	text-transform: lowercase;
+}
+.swatch {
+	background-size: cover !important;
+}
+.swatch a:hover {
+	text-decoration: none;
+}
+.swatches div h2{
+	color: #fff;
+}
+.paragraph{
+	padding: 60px 0px 40px 0;
+}
+.paragraph p{
+	max-width: 800px;
+	text-align: left;
+	color: #fff;
+	font-size: 16px;
+	margin: auto;
+}
+.categoryIcons svg{
+	width: 40px;
+}
+.categoryIcons .category{
+	display: inline-block;
+	margin: 0 40px;
+}
+.categoryIcons{
+	padding-bottom: 40px;
+}
+.categoryIcons h6{
+	display: none;
+}
+
+/*
   Attraction show logic
 */
 

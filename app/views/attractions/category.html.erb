@@ -1,3 +1,24 @@
-<% @attractions.each do |a| %>
-  <h2><%= link_to a.title, a %></h2>
-<% end %>
+<div class="categoryPage">
+	<%= content_tag :div, class:"title", style:"background-color:#{tag_color(1,@attractions.first)}" do %>
+		<%= image_tag tag_icon_helper(@attractions.first) %>
+		<%= content_tag :h1, get_tag(@attractions.first) %>
+	<% end %>
+	<%= content_tag :div, class:"swatches", style:"background-color:#{tag_color(0,@attractions.first)}" do %>
+    <% @attractions.each_with_index do |attraction| %>
+      <%= render 'attraction_swatch_template', :attraction => attraction %>
+    <% end %>
+	<% end %>
+  <%= content_tag :div, class:"paragraph", style:"background-color:#{tag_color(0,@attractions.first)}" do %>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<% end %>
+	<%= content_tag :section, class:"logo-slide", style:"background-color:#{tag_color(1,@attractions.first)}; color:white;" do %>
+	  <%= link_to :root do %>
+	    <%= image_tag "logo_white.svg" %>
+	  <% end %>
+	<% end %>
+</div>

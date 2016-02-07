@@ -8,7 +8,7 @@ class AttractionsController < ApplicationController
   end
 
   def category
-    @attractions = Attraction.tagged_with(params[:tag])
+    @attractions = Attraction.tagged_with(params[:tag]).limit(4)
   end
 
   # GET /attractions/1
