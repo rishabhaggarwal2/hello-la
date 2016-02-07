@@ -8,7 +8,7 @@ class AttractionsController < ApplicationController
   end
 
   def category
-    @attractions = Attraction.tagged_with(params[:tag]).limit(6)
+    @attractions = Attraction.tagged_with(params[:tag]).order('RANDOM()').limit(4)
   end
 
   # GET /attractions/1

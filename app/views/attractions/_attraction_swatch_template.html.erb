@@ -1,8 +1,8 @@
 <%= content_tag :div, class:"swatch", style:"background-image:url(#{asset_path(attraction.image_name)}" do %>
   <%= link_to attraction do %>
     <div class="overlay">
-      <p><%= attraction.subtitle %></p>
-      <h2><%= attraction.title %></h2>
+      <p class="swatch-subtitle"><%= attraction.subtitle %></p>
+      <h2 class="swatch-title"><%= attraction.title %></h2>
       <% if attraction.recommended %>
         <p>
           <%= image_tag "thumbs.svg" %>

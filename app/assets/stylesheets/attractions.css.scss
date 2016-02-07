@@ -20,6 +20,7 @@
 	margin:0;
 	margin-top: 10px;
 	line-height: 1.5;
+	font-family:"Futura Book", sans-serif;
 }
 .homeSplash h4{
 	font-weight: normal;
@@ -65,21 +66,9 @@
 	text-align: left;
 	margin: auto;
 	margin-top: 150px;
+	font-family:"Futura Book", "Futura", sans-serif;
 }
-// h4:before{
-// 	content:'v';
-// 	transform:rotate(180deg);
-// 	position: absolute;
-// 	top:-85px;
-// 	left:153px;
-// }
-// h4:after{
-// 	content:'v';
-// 	position: absolute;
-// 	top:85px;
-// 	left:153px;
-// }
-h4 b{
+h4 b {
 	position: relative;
 	margin-left: 10px;
 }
@@ -208,10 +197,14 @@ h4 b:after{
 	background: rgba(0,0,0,0);
 	text-decoration:none;
 }
-.swatches p {
-	font-family: Georgia;
-	font-style: italic;
-	text-transform: lowercase;
+.swatches .overlay {
+	.swatch-subtitle {
+		font-family:"Futura Book", sans-serif;
+	}
+	.swatch-title {
+		font-family:"Futura Bold", "Futura", sans-serif;
+		font-weight:bold;
+	}
 }
 .swatch {
 	background-size: cover !important;
@@ -251,15 +244,22 @@ h4 b:after{
 */
 
 section {
-  min-height:100vh;
+  min-height:75vh;
   min-width:100vw;
   display: flex !important;
   align-items: center;
   justify-content: center;
   margin:0;
+	font-size:2vw;
+}
+section h3 {
+	text-align: center;
+	font-family:"Futura Bold", "Futura", sans-serif;
+	text-transform: uppercase;
+	font-weight:bold;
+	margin: 1vw 0;
 }
 section p {
-  max-width: 50%;
   text-align: center;
   overflow:visible;
 }
@@ -287,6 +287,13 @@ section .floating-name {
     top:-2vw;
     font-family:"Futura Book", sans-serif;
     font-size:2vw;
+		a {
+			color:white;
+			text-decoration: underline;
+			&:hover {
+				text-decoration: none;
+			}
+		}
   }
   .tag-icon img {
     display:block;

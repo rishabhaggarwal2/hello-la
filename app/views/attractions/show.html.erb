@@ -7,7 +7,7 @@
     <% end %>
     <%= @attraction.title %><br />
     <%= content_tag :span, class:'subtitle' do %>
-      <%= @attraction.subtitle %>
+      <%= link_to @attraction.subtitle, @attraction.link %>
     <% end %>
   <% end %>
 <% end %>
