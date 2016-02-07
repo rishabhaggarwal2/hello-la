@@ -2,6 +2,8 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+$mossgreen: #829b6a;
+
 .centered {
   margin:auto;
   text-align: center;
@@ -25,10 +27,31 @@
   font-size:4vw;
 }
 
-#category {
-  -webkit-appearance:none;
-  -moz-appearance:none;
-  appearance:none;
-  font-size:4vw;
-  background-color:white;
+section {
+  min-height:100vh;
+  min-width:101vw;
+  left:-1px;
+  top:-1px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  margin:0;
+}
+section p {
+  max-width: 50%;
+  text-align: center;
+  overflow:visible;
+}
+
+section .floating-name {
+  height:100vh;
+  width:100%;
+  margin:0;
+  color:white;
+  font-family:"Futura Bold", "Futura", sans-serif;
+}
+
+.green {
+  background-color:$mossgreen;
+  color:white;
 }
