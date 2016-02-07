@@ -1,7 +1,9 @@
 <%= content_tag :section, class:"header-image" do %>
   <%= content_tag :h1, class:'floating-name', data:{image:@attraction.image_name} do %>
     <%= content_tag :span, class:'tag-icon' do %>
-      <%= image_tag tag_icon_helper(@attraction) %>
+      <%= link_to category_helper(@attraction) do %>
+        <%= image_tag tag_icon_helper(@attraction) %>
+      <% end %>
     <% end %>
     <%= @attraction.title %><br />
     <%= content_tag :span, class:'subtitle' do %>
@@ -9,9 +11,4 @@
     <% end %>
   <% end %>
 <% end %>
-<%= content_tag :section, style:"background-color:#{tag_color(1,@attraction)}; color:white;" do %>
-  <p><%= @attraction.long_desc %></p>
-<% end %>
-<%= content_tag :section, style:"background-color:#{tag_color(2,@attraction)}; color:white;" do %>
-  <p><%= @attraction.tips %></p>
-<% end %>
+<%= render 'attraction_sections', :attraction => @attraction %>

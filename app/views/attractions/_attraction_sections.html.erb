@@ -1,0 +1,21 @@
+<% panel_items = ["long_desc","tips",["address","phone_number","hours"]] %>
+<% panel_items.each_with_index do |value, index| %>
+  <% if value.kind_of?(Array) %>
+    <%= content_tag :section, class:"row", style:"background-color:#{tag_color(index,@attraction)}; color:white;" do %>
+      <% value.each do |subval| %>
+        <%= content_tag :div, class:"col-md-4" do %>
+          <p><%= attraction[subval] %></p>
+        <% end %>
+      <% end %>
+    <% end %>
+  <% else %>
+    <%= content_tag :section, style:"background-color:#{tag_color(index,@attraction)}; color:white;" do %>
+      <p><%= attraction[value] %></p>
+    <% end %>
+  <% end %>
+<% end %>
+<%= content_tag :section, class:"logo-slide", style:"background-color:#{tag_color(1,@attraction)}; color:white;" do %>
+  <%= link_to :root do %>
+    <%= image_tag "logo_white.svg" %>
+  <% end %>
+<% end %>

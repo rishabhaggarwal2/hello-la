@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   resources :attractions
 
-  get 'category/:tag' => 'attractions#category'
+  get 'categories/:tag' => 'attractions#category'
 
   root 'attractions#index'
 

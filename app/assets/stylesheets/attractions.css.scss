@@ -41,6 +41,10 @@ section p {
   overflow:visible;
 }
 
+section.logo-slide {
+  min-height:50vh;
+}
+
 section .floating-name {
   text-align: center;
   background-size: cover;
